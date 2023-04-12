@@ -1,0 +1,28 @@
+@mixin rubik-regular {
+    font-family: 'Rubik-Regular', sans-serif;
+}
+
+@mixin rubik-medium {
+    font-family: 'Rubik-Medium', sans-serif;
+}
+
+@mixin rubik-bold {
+    font-family: 'Rubik-Bold', sans-serif;
+}
+
+@mixin container {
+    width: 1170px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1440px) {
+        width: 960px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 632px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 292px;
+    }
+}
