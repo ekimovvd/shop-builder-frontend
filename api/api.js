@@ -1,4 +1,3 @@
-import http from './http.js'
+import http from "./http.js";
 
-export default class Api {
-}
+export default class Api {}

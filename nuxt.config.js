@@ -17,6 +17,7 @@ export default {
 
   css: [
     '~assets/styles/main.scss',
+    "boxicons/css/boxicons.min.css"
   ],
 
   styleResources: {

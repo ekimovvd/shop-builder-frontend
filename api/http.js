@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from "axios";
 
 const http = axios.create({
-    baseURL: '/'
-})
+    baseURL: "/",
+});
 
-export default http
+export default http;

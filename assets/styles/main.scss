@@ -5,6 +5,13 @@
     text-decoration: none;
 }
 
+html,
+body,
+#__nuxt,
+#__layout {
+    height: 100%;
+}
+
 body {
     @include rubik-regular;
     padding: 0;
