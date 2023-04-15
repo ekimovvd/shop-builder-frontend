@@ -1,6 +1,9 @@
 <template>
     <div class="login-content">
-        <LoginHeader />
+        <UIIntroduction
+            title="Войдите в свою учётную запись"
+            label="С возвращением! Пожалуйста, введите свои данные."
+        />
 
         <LoginForm />
 
@@ -9,14 +12,14 @@
 </template>
 
 <script>
-import LoginHeader from "@/components/shared/login/header/header.vue";
+import UIIntroduction from "@/components/ui/introduction/introduction.vue";
 import LoginForm from "@/components/shared/login/form/form.vue";
 import LoginAccount from "@/components/shared/login/account/account.vue";
 
 export default {
     name: "LoginContent",
     components: {
-        LoginHeader,
+        UIIntroduction,
         LoginForm,
         LoginAccount,
     },
