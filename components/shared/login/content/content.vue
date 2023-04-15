@@ -1,8 +1,8 @@
 <template>
     <div class="login-content">
         <UIIntroduction
-            title="Войдите в свою учётную запись"
-            label="С возвращением! Пожалуйста, введите свои данные."
+            title="Авторизация"
+            label="С возвращением! Пожалуйста, введите свои данные"
         />
 
         <LoginForm />
@@ -32,5 +32,11 @@ export default {
     display: flex;
     flex-direction: column;
     grid-row-gap: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .login-content {
+        width: 320px;
+    }
 }
 </style>

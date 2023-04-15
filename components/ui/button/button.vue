@@ -112,5 +112,35 @@ export default {
             border: 2px solid $black;
         }
     }
+
+    &.ui-button--black-outline {
+        color: $black;
+        background: $white;
+        padding: 10px 16px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $black;
+        font-size: 14px;
+        line-height: 18px;
+
+        &:disabled {
+            cursor: default;
+            opacity: $opacity;
+
+            &:hover {
+                color: $black;
+                background: $white;
+                border: 2px solid $black;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background: $black;
+            border: 2px solid transparent;
+        }
+    }
 }
 </style>

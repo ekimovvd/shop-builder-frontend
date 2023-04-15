@@ -62,4 +62,17 @@ export default {
         color: $label;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .ui-introduction {
+        .ui-introduction__content {
+            grid-row-gap: 8px;
+        }
+
+        .ui-introduction__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}
 </style>

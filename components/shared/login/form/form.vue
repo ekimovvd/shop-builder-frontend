@@ -23,9 +23,9 @@
         </div>
 
         <UILink
-            class="login-form__recovery-password"
+            class="login-form__password-recovery"
             label="Забыли пароль?"
-            to="/recovery-password"
+            to="/password-recovery"
         />
 
         <UIButton
@@ -115,7 +115,7 @@ export default {
         grid-row-gap: 20px;
     }
 
-    .login-form__recovery-password {
+    .login-form__password-recovery {
         margin-left: auto;
     }
 }

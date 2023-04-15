@@ -2,7 +2,7 @@
     <div class="registration-content">
         <UIIntroduction
             title="Регистрация"
-            label="Начните воплощать свои идеи в реальность."
+            label="Начните воплощать свои идеи в реальность"
         />
 
         <RegistrationForm />
@@ -32,5 +32,11 @@ export default {
     display: flex;
     flex-direction: column;
     grid-row-gap: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .registration-content {
+        width: 320px;
+    }
 }
 </style>

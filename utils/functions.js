@@ -21,3 +21,9 @@ export function getValidationPassword(password) {
 
     return regex.test(password);
 }
+
+export function getValidationCode(code) {
+    const regex = /^[a-zA-Z0-9]{1,20}$/;
+
+    return regex.test(code);
+}
