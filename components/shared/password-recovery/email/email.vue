@@ -13,19 +13,14 @@
         <div class="password-recovery-email__actions">
             <UIButton
                 label="Восстановить пароль"
-                view="black"
+                view="primary"
                 :full="true"
                 :disabled="getDisabled"
                 :loading="loading"
                 @clicked="onResetPassword"
             />
 
-            <UILink
-                label="Назад"
-                to="/login"
-                view="black-outline"
-                :full="true"
-            />
+            <UILink label="Назад" to="/login" view="secondary" :full="true" />
         </div>
     </div>
 </template>
@@ -95,7 +90,7 @@ export default {
     .password-recovery-email__actions {
         display: flex;
         flex-direction: column;
-        grid-row-gap: 16px;
+        grid-row-gap: 8px;
     }
 }
 </style>

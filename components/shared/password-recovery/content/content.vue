@@ -84,6 +84,7 @@ export default {
 
 <style lang="scss">
 .password-recovery-content {
+    padding: 120px 0;
     width: 360px;
     display: flex;
     flex-direction: column;

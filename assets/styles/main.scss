@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @import "./mixins.scss";
 
 * {
@@ -13,7 +14,7 @@ body,
 }
 
 body {
-    @include rubik-regular;
+    @include inter-medium;
     padding: 0;
     margin: 0;
     position: relative;
@@ -25,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-    @include rubik-bold;
+    @include inter-bold;
     padding: 0;
     margin: 0;
 }

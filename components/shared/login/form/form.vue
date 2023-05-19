@@ -22,20 +22,23 @@
             />
         </div>
 
-        <UILink
-            class="login-form__password-recovery"
-            label="Забыли пароль?"
-            to="/password-recovery"
-        />
+        <div class="login-form__footer">
+            <UILink
+                class="login-form__password-recovery"
+                label="Забыли пароль?"
+                to="/password-recovery"
+                view="main"
+            />
 
-        <UIButton
-            label="Войти"
-            view="black"
-            :full="true"
-            :disabled="getDisabled"
-            :loading="loading"
-            @clicked="onLogin"
-        />
+            <UIButton
+                label="Войти"
+                view="primary"
+                :full="true"
+                :disabled="getDisabled"
+                :loading="loading"
+                @clicked="onLogin"
+            />
+        </div>
     </div>
 </template>
 
@@ -112,7 +115,13 @@ export default {
     .login-form__fields {
         display: flex;
         flex-direction: column;
-        grid-row-gap: 20px;
+        grid-row-gap: 12px;
+    }
+
+    .login-form__footer {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 16px;
     }
 
     .login-form__password-recovery {

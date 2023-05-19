@@ -1,16 +1,12 @@
 <template>
     <div class="ui-introduction">
-        <UILogo />
+        <h1 class="ui-introduction__title">
+            {{ title }}
+        </h1>
 
-        <div class="ui-introduction__content">
-            <h1 class="ui-introduction__title">
-                {{ title }}
-            </h1>
-
-            <p class="ui-introduction__label">
-                {{ label }}
-            </p>
-        </div>
+        <p class="ui-introduction__label" v-if="label">
+            {{ label }}
+        </p>
     </div>
 </template>
 
@@ -40,38 +36,32 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-row-gap: 24px;
+    grid-row-gap: 8px;
     text-align: center;
 
-    .ui-introduction__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-row-gap: 12px;
-    }
-
     .ui-introduction__title {
-        font-size: 30px;
-        line-height: 38px;
-        color: $black;
+        font-size: 32px;
+        line-height: 36px;
+        color: $txt-main;
     }
 
     .ui-introduction__label {
-        font-size: 16px;
-        line-height: 20px;
-        color: $label;
+        font-size: 14px;
+        line-height: 18px;
+        color: $txt-light;
     }
 }
 
 @media screen and (max-width: 768px) {
     .ui-introduction {
-        .ui-introduction__content {
-            grid-row-gap: 8px;
-        }
-
         .ui-introduction__title {
             font-size: 24px;
             line-height: 32px;
+        }
+
+        .ui-introduction__label {
+            font-size: 12px;
+            line-height: 16px;
         }
     }
 }

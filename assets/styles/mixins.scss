@@ -1,13 +1,13 @@
-@mixin rubik-regular {
-    font-family: "Rubik-Regular", sans-serif;
+@mixin inter-regular {
+    font-family: "Inter-Regular", sans-serif;
 }
 
-@mixin rubik-medium {
-    font-family: "Rubik-Medium", sans-serif;
+@mixin inter-medium {
+    font-family: "Inter-Medium", sans-serif;
 }
 
-@mixin rubik-bold {
-    font-family: "Rubik-Bold", sans-serif;
+@mixin inter-bold {
+    font-family: "Inter-Bold", sans-serif;
 }
 
 @mixin container {
@@ -24,5 +24,56 @@
 
     @media screen and (max-width: 768px) {
         width: 292px;
+    }
+}
+
+@mixin button-reset {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    transition: $transition;
+}
+
+@mixin primary {
+    color: $white;
+    background: $primary;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 18px;
+
+    &:disabled {
+        cursor: default;
+        opacity: $opacity;
+    }
+
+    &:hover {
+        opacity: $opacity;
+    }
+}
+
+@mixin secondary {
+    color: $txt-main;
+    background: $secondary;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 18px;
+
+    &:disabled {
+        cursor: default;
+        opacity: $opacity;
+    }
+
+    &:hover {
+        opacity: $opacity;
     }
 }

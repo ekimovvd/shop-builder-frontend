@@ -24,7 +24,7 @@
 
         <UIButton
             label="Сохранить"
-            view="black"
+            view="primary"
             :full="true"
             :disabled="getDisabled"
             :loading="loading"
@@ -106,7 +106,7 @@ export default {
     .password-recovery-code__fields {
         display: flex;
         flex-direction: column;
-        grid-row-gap: 20px;
+        grid-row-gap: 12px;
     }
 }
 </style>

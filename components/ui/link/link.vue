@@ -49,40 +49,38 @@ export default {
 
 <style lang="scss">
 .ui-link {
-    @include rubik-medium;
+    @include inter-medium;
     text-decoration: none;
-    font-size: 14px;
-    line-height: 20px;
-    color: $black;
+    font-size: 12px;
+    line-height: 16px;
+    color: $txt-main;
     transition: $transition;
 
-    &.ui-link--black-outline {
-        color: $black;
-        background: $white;
-        padding: 10px 16px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid $black;
+    &.ui-link--primary {
+        @include primary;
+    }
+
+    &.ui-link--secondary {
+        @include secondary;
+    }
+
+    &.ui-link--light {
+        color: $txt-light;
         font-size: 14px;
         line-height: 18px;
 
-        &:disabled {
-            cursor: default;
-            opacity: $opacity;
-
-            &:hover {
-                color: $black;
-                background: $white;
-                border: 2px solid $black;
-            }
+        &:hover {
+            color: $primary;
         }
+    }
+
+    &.ui-link--main {
+        color: $txt-main;
+        font-size: 12px;
+        line-height: 16px;
 
         &:hover {
-            color: $white;
-            background: $black;
-            border: 2px solid transparent;
+            opacity: $opacity;
         }
     }
 }

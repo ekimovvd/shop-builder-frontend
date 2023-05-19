@@ -114,10 +114,10 @@ export default {
     grid-row-gap: 6px;
 
     .ui-input__label {
-        @include rubik-regular;
+        @include inter-medium;
         font-size: 12px;
         line-height: 16px;
-        color: $label;
+        color: $txt-light;
     }
 
     .ui-input__group {
@@ -129,14 +129,18 @@ export default {
     }
 
     .ui-input__field {
-        @include rubik-regular;
-        background: #f8f8f8;
+        @include inter-regular;
+        background: $bg-light;
         border: none;
         outline: none;
-        padding: 12px 16px;
+        padding: 10px 16px;
         border-radius: 8px;
-        color: #6d6d6d;
-        font-size: 14px;
+        color: $txt-light;
+        font-size: 13px;
+
+        &::placeholder {
+            opacity: 1;
+        }
     }
 
     .ui-input__field--full {
@@ -144,7 +148,7 @@ export default {
     }
 
     .ui-input__field--indicator {
-        padding: 12px 32px 12px 16px;
+        padding: 10px 32px 10px 16px;
     }
 
     .ui-input__indicator {

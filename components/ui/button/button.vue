@@ -71,76 +71,19 @@ export default {
 
 <style lang="scss">
 .ui-button {
-    @include rubik-medium;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    transition: $transition;
+    @include inter-medium;
+    @include button-reset;
 
     &.ui-button--full {
         width: 100%;
     }
 
-    &.ui-button--black {
-        color: $white;
-        background: $black;
-        padding: 10px 16px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid transparent;
-        font-size: 14px;
-        line-height: 18px;
-
-        &:disabled {
-            cursor: default;
-            opacity: $opacity;
-
-            &:hover {
-                color: $white;
-                background: $black;
-                border: 2px solid transparent;
-            }
-        }
-
-        &:hover {
-            color: $black;
-            background: $white;
-            border: 2px solid $black;
-        }
+    &.ui-button--primary {
+        @include primary;
     }
 
-    &.ui-button--black-outline {
-        color: $black;
-        background: $white;
-        padding: 10px 16px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid $black;
-        font-size: 14px;
-        line-height: 18px;
-
-        &:disabled {
-            cursor: default;
-            opacity: $opacity;
-
-            &:hover {
-                color: $black;
-                background: $white;
-                border: 2px solid $black;
-            }
-        }
-
-        &:hover {
-            color: $white;
-            background: $black;
-            border: 2px solid transparent;
-        }
+    &.ui-button--secondary {
+        @include secondary;
     }
 }
 </style>

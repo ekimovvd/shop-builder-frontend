@@ -1,11 +1,8 @@
 <template>
     <div class="registration-content">
-        <UIIntroduction
-            title="Регистрация"
-            label="Начните воплощать свои идеи в реальность"
-        />
+        <UIIntroduction title="Регистрация" />
 
-        <RegistrationForm />
+        <RegistrationForm class="registration-content__form" />
 
         <RegistrationAccount />
     </div>
@@ -28,10 +25,14 @@ export default {
 
 <style lang="scss">
 .registration-content {
+    padding: 120px 0;
     width: 360px;
     display: flex;
     flex-direction: column;
-    grid-row-gap: 32px;
+
+    .registration-content__form {
+        margin: 32px 0 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -1,11 +1,8 @@
 <template>
     <div class="login-content">
-        <UIIntroduction
-            title="Авторизация"
-            label="С возвращением! Пожалуйста, введите свои данные"
-        />
+        <UIIntroduction title="Авторизация" />
 
-        <LoginForm />
+        <LoginForm class="login-content__form" />
 
         <LoginAccount />
     </div>
@@ -31,7 +28,11 @@ export default {
     width: 360px;
     display: flex;
     flex-direction: column;
-    grid-row-gap: 32px;
+    padding: 120px 0;
+
+    .login-content__form {
+        margin: 32px 0 16px 0;
+    }
 }
 
 @media screen and (max-width: 768px) {

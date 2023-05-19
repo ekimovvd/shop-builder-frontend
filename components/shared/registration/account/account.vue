@@ -2,7 +2,7 @@
     <div class="registration-account">
         <p class="registration-account__label">У вас есть аккаунт?</p>
 
-        <UILink label="Вход" to="/login" />
+        <UILink label="Вход" to="/login" view="main" />
     </div>
 </template>
 
@@ -25,9 +25,9 @@ export default {
     grid-column-gap: 4px;
 
     .registration-account__label {
-        font-size: 14px;
-        line-height: 18px;
-        color: $label;
+        font-size: 12px;
+        line-height: 16px;
+        color: $txt-light;
     }
 }
 </style>
